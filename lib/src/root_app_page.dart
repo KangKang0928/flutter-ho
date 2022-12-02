@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ho/src/pages/demo/demo38/demo_demo_TweenAnimatedBuilder.dart';
 
@@ -26,11 +25,11 @@ class _RootAPPState extends State {
     return MaterialApp(
       theme: ThemeData(
           primaryColor: Colors.lightBlueAccent,
-          bottomAppBarTheme: BottomAppBarTheme(color: Colors.blue)),
+          bottomAppBarTheme: const BottomAppBarTheme(color: Colors.blue)),
       //不显示 debug 标签
       debugShowCheckedModeBanner: false,
-      home: DemoAnimatedTweenPage(),
-      // home: IndexPage(),
+      // home: DemoAnimatedTweenPage(),
+      home: IndexPage(),
     );
   }
 }
